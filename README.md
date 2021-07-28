@@ -22,3 +22,9 @@ put into `/sdcard/arm/houdini9_y.sfs`
 run `/system/bin/enable_nativebridge`
 
 To verify, check `/system/lib/houdini.so` is there
+
+# qemu-ifup script
+
+Refer to [here](https://wiki.qemu.org/Documentation/Networking/NAT)
+
+be sure to `ip link delete br0` if you want to cleanup, or write a `/etc/qemu-ifdown`. It will be automatically run
